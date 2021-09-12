@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="notificationFeed1RowModel" type="com.pearlvinechennai.app.modules.notificationfeed.data.model.NotificationFeed1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/image"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_48px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_width="@dimen/_48px"
+            android:scaleType="centerCrop" android:src="@drawable/img_image_product_1"/>
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12px"
+            android:layout_weight="0.79" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStyle">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtNewProduct"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{notificationFeed1RowModel.txtNewProduct}" style="@style/textStylePoppinsbold14_3"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtNikeAirZoomP"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4px"
+                android:layout_width="match_parent"
+                android:text="@{notificationFeed1RowModel.txtNikeAirZoomP}" style="@style/textStylePoppinsregular12"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtJune320155"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4px"
+                android:layout_width="match_parent"
+                android:text="@{notificationFeed1RowModel.txtJune320155}" style="@style/textStylePoppinsregular10_1"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

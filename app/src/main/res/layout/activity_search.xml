@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="searchVM" type="com.pearlvinechennai.app.modules.search.data.viewmodel.SearchVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linear1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <EditText
+                    android:background="@drawable/rectangle_border_light_blue_a200_radius_5"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="top|start"
+                    android:hint="@string/lbl_nike_air_max"
+                    android:id="@+id/etNikeAirMax"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_13px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_13px"
+                    android:singleLine="true"
+                    android:text="@={searchVM.searchModel.etNikeAirMaxValue}"
+                    android:textColor="@color/indigo_900"
+                    android:textColorHint="@color/indigo_900"
+                    android:textFontWeight="700"
+                    android:textSize="@dimen/_12px" android:textStyle="bold"/>
+                <ImageView android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24px"
+                    android:layout_marginStart="@dimen/_28px"
+                    android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_mic"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:id="@+id/scrollView"
+            android:layout_height="0dp" android:layout_weight="1"
+            android:layout_width="match_parent" android:paddingBottom="@dimen/_10px">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <View android:background="@color/blue_50"
+                    android:id="@+id/line"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_1px"
+                    android:layout_marginStart="@dimen/_6px"
+                    android:layout_marginTop="@dimen/_17px" android:layout_width="match_parent"/>
+                <LinearLayout android:id="@+id/linear3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <TextView android:clickable="true"
+                        android:gravity="top|start"
+                        android:id="@+id/txtNikeAirMax27"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_16px"
+                        android:paddingStart="@dimen/_16px"
+                        android:paddingTop="@dimen/_16px"
+                        android:text="@{searchVM.searchModel.txtNikeAirMax27}" style="@style/textStylePoppinsregular12_2"/>
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtNikeAirVaporm"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_16px"
+                        android:paddingStart="@dimen/_16px"
+                        android:paddingTop="@dimen/_16px"
+                        android:text="@{searchVM.searchModel.txtNikeAirVaporm}" style="@style/textStylePoppinsregular12_2"/>
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtNikeAirMax28"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_16px"
+                        android:paddingStart="@dimen/_16px"
+                        android:paddingTop="@dimen/_16px"
+                        android:text="@{searchVM.searchModel.txtNikeAirMax28}" style="@style/textStylePoppinsregular12_2"/>
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtNikeAirMax29"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_16px"
+                        android:paddingStart="@dimen/_16px"
+                        android:paddingTop="@dimen/_16px"
+                        android:text="@{searchVM.searchModel.txtNikeAirMax29}" style="@style/textStylePoppinsregular12_2"/>
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtNikeAirVaporm1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_16px"
+                        android:paddingStart="@dimen/_16px"
+                        android:paddingTop="@dimen/_16px"
+                        android:text="@{searchVM.searchModel.txtNikeAirVaporm1}" style="@style/textStylePoppinsregular12_2"/>
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtNikeAirMax97"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_16px"
+                        android:paddingStart="@dimen/_16px"
+                        android:paddingTop="@dimen/_16px"
+                        android:text="@{searchVM.searchModel.txtNikeAirMax97}" style="@style/textStylePoppinsregular12_2"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

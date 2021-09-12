@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="reviewProduct1RowModel" type="com.pearlvinechennai.app.modules.reviewproduct.data.model.ReviewProduct1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle">
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_48px"
+                    android:layout_width="@dimen/_48px"
+                    android:scaleType="centerCrop" circular="@{true}" imageRes="@{@drawable/img_profile_picture_1}"/>
+                <LinearLayout android:id="@+id/linear3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16px"
+                    android:layout_weight="0.73"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtJamesLawson"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{reviewProduct1RowModel.txtJamesLawson}" style="@style/textStylePoppinsbold14_3"/>
+                    <LinearLayout android:id="@+id/linear4"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4px"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStyle">
+                        <androidx.appcompat.widget.AppCompatRatingBar
+                            android:id="@+id/ratingBar"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:numStars="5"
+                            android:progressTint="@color/yellow_700"
+                            android:rating="5" style="@style/Widget.AppCompat.RatingBar.Small"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtAirMaxAreAlw"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:text="@{reviewProduct1RowModel.txtAirMaxAreAlw}" style="@style/textStylePoppinsregular12"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtDecember1020"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:text="@{reviewProduct1RowModel.txtDecember1020}" style="@style/textStylePoppinsregular10"/>
+    </LinearLayout>
+</layout>

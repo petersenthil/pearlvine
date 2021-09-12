@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="accountVM" type="com.pearlvinechennai.app.modules.account.data.viewmodel.AccountVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13px"
+            android:layout_marginStart="@dimen/_13px" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linear1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtAccount"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:text="@{accountVM.accountModel.txtAccount}" style="@style/textStylePoppinsbold16"/>
+                <ImageView android:clickable="true"
+                    android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24px"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_notification"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:id="@+id/linear2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_28px"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                style="@style/groupStyle" tools:itemCount="4" tools:listitem="@layout/row_account1"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linear3"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <View android:background="@color/blue_50"
+                android:id="@+id/line"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1px" android:layout_width="match_parent"/>
+            <LinearLayout android:id="@+id/linear4"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15px"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyle">
+                <LinearLayout android:id="@+id/linear5"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginEnd="@dimen/_25px"
+                        android:layout_marginStart="@dimen/_25px"
+                        android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_home_1"/>
+                    <TextView android:gravity="top|center"
+                        android:id="@+id/txtHome"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4px"
+                        android:layout_width="match_parent"
+                        android:text="@{accountVM.accountModel.txtHome}" style="@style/textStylePoppinsregular10"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear6"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image2"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginEnd="@dimen/_25px"
+                        android:layout_marginStart="@dimen/_25px"
+                        android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_search_1"/>
+                    <TextView android:gravity="top|center"
+                        android:id="@+id/txtExplore"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4px"
+                        android:layout_width="match_parent"
+                        android:text="@{accountVM.accountModel.txtExplore}" style="@style/textStylePoppinsregular10"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear7"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image3"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginEnd="@dimen/_25px"
+                        android:layout_marginStart="@dimen/_25px"
+                        android:layout_marginTop="@dimen/_10px"
+                        android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_cart_1"/>
+                    <TextView android:gravity="top|center"
+                        android:id="@+id/txtCart"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4px"
+                        android:layout_width="match_parent"
+                        android:text="@{accountVM.accountModel.txtCart}" style="@style/textStylePoppinsregular10"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear8"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image4"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginEnd="@dimen/_25px"
+                        android:layout_marginStart="@dimen/_25px"
+                        android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_offer_2"/>
+                    <TextView android:gravity="top|center"
+                        android:id="@+id/txtOffer"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4px"
+                        android:layout_width="match_parent"
+                        android:text="@{accountVM.accountModel.txtOffer}" style="@style/textStylePoppinsregular10"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear9"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image5"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginEnd="@dimen/_25px"
+                        android:layout_marginStart="@dimen/_25px"
+                        android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_user_1"/>
+                    <TextView android:gravity="top|center"
+                        android:id="@+id/txtAccount1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4px"
+                        android:layout_width="match_parent"
+                        android:text="@{accountVM.accountModel.txtAccount1}" style="@style/textStylePoppinsbold10_1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

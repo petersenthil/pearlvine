@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="successScreenVM" type="com.pearlvinechennai.app.modules.successscreen.data.viewmodel.SuccessScreenVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/image"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_72px"
+            android:layout_marginEnd="@dimen/_50px"
+            android:layout_marginStart="@dimen/_50px"
+            android:layout_marginTop="@dimen/_80px"
+            android:layout_width="@dimen/_72px" imageRes="@{@drawable/img_success_icon}"/>
+        <TextView android:gravity="top|center"
+            android:id="@+id/txtSuccess"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_50px"
+            android:layout_marginStart="@dimen/_50px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:text="@{successScreenVM.successScreenModel.txtSuccess}" style="@style/textStylePoppinsbold24_1"/>
+        <TextView android:gravity="top|center"
+            android:id="@+id/txtThankYouForS"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_36px"
+            android:layout_marginStart="@dimen/_36px"
+            android:layout_marginTop="@dimen/_8px"
+            android:layout_width="match_parent"
+            android:text="@{successScreenVM.successScreenModel.txtThankYouForS}" style="@style/textStylePoppinsregular12_1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:clickable="true" android:gravity="center"
+            android:id="@+id/btnBackToOrder"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_16px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_16px"
+            android:text="@string/lbl_back_to_order" style="@style/textStylePoppinsbold14"/>
+    </LinearLayout>
+</layout>

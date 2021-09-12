@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="orderDetails1RowModel" type="com.pearlvinechennai.app.modules.orderdetails.data.model.OrderDetails1RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frame"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" style="@style/groupStyle">
+        <FrameLayout android:id="@+id/frame1"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" style="@style/groupStylewhite_A700cornerRadius">
+            <LinearLayout android:id="@+id/linear"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_15px"
+                android:layout_marginEnd="@dimen/_16px"
+                android:layout_marginStart="@dimen/_16px"
+                android:layout_marginTop="@dimen/_16px"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyle">
+                <ImageView android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_72px"
+                    android:layout_width="@dimen/_72px"
+                    android:scaleType="centerCrop"
+                    cornerRadius="@{@dimen/_5px}" imageRes="@{@drawable/img_image_product_7}"/>
+                <LinearLayout android:id="@+id/linear1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12px"
+                    android:layout_weight="0.77"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <LinearLayout android:id="@+id/linear2"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtNikeAirZoomP"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:layout_width="0dp"
+                            android:text="@{orderDetails1RowModel.txtNikeAirZoomP}" style="@style/textStylePoppinsbold12_2"/>
+                        <ImageView android:id="@+id/image1"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_24px"
+                            android:layout_marginStart="@dimen/_13px"
+                            android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_love_1"/>
+                        <ImageView android:id="@+id/image2"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_24px"
+                            android:layout_marginStart="@dimen/_8px"
+                            android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_trash"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linear3"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_17px"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txt29943"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.39"
+                            android:layout_width="0dp"
+                            android:text="@{orderDetails1RowModel.txt29943}" style="@style/textStylePoppinsbold12"/>
+                        <LinearLayout android:id="@+id/linear4"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_29px"
+                            android:layout_weight="0.6"
+                            android:layout_width="0dp"
+                            android:orientation="horizontal" style="@style/groupStyle">
+                            <ImageView android:id="@+id/image3"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_20px"
+                                android:layout_width="@dimen/_33px" android:src="@drawable/img_group_504"/>
+                            <TextView android:gravity="top|center"
+                                android:id="@+id/txt1"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.38"
+                                android:layout_width="0dp"
+                                android:paddingEnd="@dimen/_9px"
+                                android:paddingStart="@dimen/_12px"
+                                android:text="@{orderDetails1RowModel.txt1}" style="@style/textStylePoppinsregular12_4"/>
+                            <ImageView android:id="@+id/image4"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_20px"
+                                android:layout_width="@dimen/_33px" android:src="@drawable/img_group_502"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

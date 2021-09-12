@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.pearlvinechennai.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.pearlvinechennai.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.pearlvinechennai.app.modules.addaddress.ui.AddAddressActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.search.ui.SearchActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.registerform.ui.RegisterFormActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.notification.ui.NotificationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.searchresult.ui.SearchResultActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.offerscreen.ui.OfferScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.creditcardanddebit.ui.CreditCardAndDebitActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.productdetail.ui.ProductDetailActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.reviewproduct.ui.ReviewProductActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.choosecreditordebitcard.ui.ChooseCreditOrDebitCardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.explore.ui.ExploreActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.notificationoffer.ui.NotificationOfferActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.shortby.ui.ShortByActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.orderdetails.ui.OrderDetailsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.address.ui.AddressActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.addcard.ui.AddCardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.changepassword.ui.ChangePasswordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.profile.ui.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.searchresult2.ui.SearchResult2Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.lailyfafebrinacard.ui.LailyfaFebrinaCardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.successscreen.ui.SuccessScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.shipto.ui.ShipToActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.favoriteproduct.ui.FavoriteProductActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.listcategory.ui.ListCategoryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.dashboard.ui.DashboardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.notificationfeed.ui.NotificationFeedActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.filter.ui.FilterActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.offerscreen2.ui.OfferScreen2Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.login.ui.LoginActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.cart.ui.CartActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.splash.ui.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.notification2.ui.Notification2Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.writereviewfill.ui.WriteReviewFillActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.order.ui.OrderActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.pearlvinechennai.app.modules.account.ui.AccountActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

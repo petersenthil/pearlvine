@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cartVM" type="com.pearlvinechennai.app.modules.cart.data.viewmodel.CartVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13px"
+            android:layout_marginStart="@dimen/_13px" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linear1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtYourCart"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.23"
+                    android:layout_width="0dp"
+                    android:text="@{cartVM.cartModel.txtYourCart}" style="@style/textStylePoppinsbold16"/>
+                <ImageView android:clickable="true"
+                    android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24px"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_notification"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:id="@+id/scrollView" android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent" android:paddingBottom="@dimen/_10px">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16px"
+                    android:layout_marginStart="@dimen/_16px"
+                    android:layout_marginTop="@dimen/_24px"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_16px}"
+                    style="@style/groupStyle" tools:itemCount="2" tools:listitem="@layout/row_cart1"/>
+                <LinearLayout android:id="@+id/linear3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16px"
+                    android:layout_marginStart="@dimen/_16px"
+                    android:layout_marginTop="@dimen/_52px"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <EditText
+                        android:background="@drawable/rectangle_bg_white_a700_border_blue_50_radius_5"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center|start"
+                        android:hint="@string/msg_enter_cupon_cod"
+                        android:id="@+id/etEnterCuponCod"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:layout_width="0dp"
+                        android:paddingBottom="@dimen/_17px"
+                        android:paddingStart="@dimen/_16px"
+                        android:paddingTop="@dimen/_17px"
+                        android:singleLine="true"
+                        android:text="@={cartVM.cartModel.etEnterCuponCodValue}"
+                        android:textColor="@color/bluegray_300"
+                        android:textColorHint="@color/bluegray_300"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_12px" android:textStyle="normal"/>
+                    <TextView android:gravity="top|center"
+                        android:id="@+id/txtApply"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:layout_width="0dp"
+                        android:paddingBottom="@dimen/_17px"
+                        android:paddingEnd="@dimen/_24px"
+                        android:paddingStart="@dimen/_24px"
+                        android:paddingTop="@dimen/_17px"
+                        android:text="@{cartVM.cartModel.txtApply}" style="@style/textStylePoppinsbold12_9"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear4"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15px"
+                    android:layout_marginStart="@dimen/_15px"
+                    android:layout_marginTop="@dimen/_16px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                    <LinearLayout android:id="@+id/linear5"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16px"
+                        android:layout_marginStart="@dimen/_16px"
+                        android:layout_marginTop="@dimen/_16px"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtItems3"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.19"
+                            android:layout_width="0dp"
+                            android:text="@{cartVM.cartModel.txtItems3}" style="@style/textStylePoppinsregular12"/>
+                        <TextView android:gravity="top|end"
+                            android:id="@+id/txt59886"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_50px"
+                            android:layout_weight="0.49"
+                            android:layout_width="0dp"
+                            android:text="@{cartVM.cartModel.txt59886}" style="@style/textStylePoppinsregular12_1"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linear6"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16px"
+                        android:layout_marginStart="@dimen/_16px"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtShipping"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.18"
+                            android:layout_width="0dp"
+                            android:text="@{cartVM.cartModel.txtShipping}" style="@style/textStylePoppinsregular12"/>
+                        <TextView android:gravity="top|end"
+                            android:id="@+id/txt4000"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_50px"
+                            android:layout_weight="0.46"
+                            android:layout_width="0dp"
+                            android:text="@{cartVM.cartModel.txt4000}" style="@style/textStylePoppinsregular12_1"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linear7"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16px"
+                        android:layout_marginStart="@dimen/_16px"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtImportCharges"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.32"
+                            android:layout_width="0dp"
+                            android:text="@{cartVM.cartModel.txtImportCharges}" style="@style/textStylePoppinsregular12"/>
+                        <TextView android:gravity="top|end"
+                            android:id="@+id/txt12800"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_50px"
+                            android:layout_weight="0.47"
+                            android:layout_width="0dp"
+                            android:text="@{cartVM.cartModel.txt12800}" style="@style/textStylePoppinsregular12_1"/>
+                    </LinearLayout>
+                    <View android:background="@color/blue_50"
+                        android:id="@+id/line"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginEnd="@dimen/_16px"
+                        android:layout_marginStart="@dimen/_16px"
+                        android:layout_marginTop="@dimen/_12px" android:layout_width="match_parent"/>
+                    <LinearLayout android:id="@+id/linear8"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16px"
+                        android:layout_marginStart="@dimen/_16px"
+                        android:layout_marginTop="@dimen/_11px"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtTotalPrice"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.23"
+                            android:layout_width="0dp"
+                            android:text="@{cartVM.cartModel.txtTotalPrice}" style="@style/textStylePoppinsbold12_2"/>
+                        <TextView android:gravity="top|end"
+                            android:id="@+id/txt76686"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_50px"
+                            android:layout_weight="0.49"
+                            android:layout_width="0dp"
+                            android:text="@{cartVM.cartModel.txt76686}" style="@style/textStylePoppinsbold12"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:clickable="true" android:gravity="center"
+                    android:id="@+id/btnCheckOut"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16px"
+                    android:layout_marginStart="@dimen/_16px"
+                    android:layout_marginTop="@dimen/_16px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_16px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_16px"
+                    android:text="@string/lbl_check_out" style="@style/textStylePoppinsbold14"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:id="@+id/linear9"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <View android:background="@color/blue_50"
+                android:id="@+id/line1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1px" android:layout_width="match_parent"/>
+            <LinearLayout android:id="@+id/linear10"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15px"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyle">
+                <LinearLayout android:id="@+id/linear11"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginEnd="@dimen/_25px"
+                        android:layout_marginStart="@dimen/_25px"
+                        android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_home_1"/>
+                    <TextView android:gravity="top|center"
+                        android:id="@+id/txtHome"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4px"
+                        android:layout_width="match_parent"
+                        android:text="@{cartVM.cartModel.txtHome}" style="@style/textStylePoppinsregular10"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear12"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image2"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginEnd="@dimen/_25px"
+                        android:layout_marginStart="@dimen/_25px"
+                        android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_search_1"/>
+                    <TextView android:gravity="top|center"
+                        android:id="@+id/txtExplore"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4px"
+                        android:layout_width="match_parent"
+                        android:text="@{cartVM.cartModel.txtExplore}" style="@style/textStylePoppinsregular10"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear13"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image3"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginEnd="@dimen/_25px"
+                        android:layout_marginStart="@dimen/_25px"
+                        android:layout_marginTop="@dimen/_10px"
+                        android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_cart_2"/>
+                    <TextView android:gravity="top|center"
+                        android:id="@+id/txtCart"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4px"
+                        android:layout_width="match_parent"
+                        android:text="@{cartVM.cartModel.txtCart}" style="@style/textStylePoppinsbold10_1"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear14"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image4"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginEnd="@dimen/_25px"
+                        android:layout_marginStart="@dimen/_25px"
+                        android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_offer_2"/>
+                    <TextView android:gravity="top|center"
+                        android:id="@+id/txtOffer"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4px"
+                        android:layout_width="match_parent"
+                        android:text="@{cartVM.cartModel.txtOffer}" style="@style/textStylePoppinsregular10"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image5"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginEnd="@dimen/_25px"
+                        android:layout_marginStart="@dimen/_25px"
+                        android:layout_width="@dimen/_24px" android:src="@drawable/img_group_9"/>
+                    <TextView android:gravity="top|center"
+                        android:id="@+id/txtAccount"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4px"
+                        android:layout_width="match_parent"
+                        android:text="@{cartVM.cartModel.txtAccount}" style="@style/textStylePoppinsregular10"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="lailyfaFebrinaCardVM" type="com.pearlvinechennai.app.modules.lailyfafebrinacard.data.viewmodel.LailyfaFebrinaCardVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_50px" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linear1"
+                android:layout_gravity="start"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_26px"
+                    android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_left_3"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtLailyfaFebrina"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12px"
+                    android:layout_weight="0.89"
+                    android:layout_width="0dp"
+                    android:text="@{lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.txtLailyfaFebrina}" style="@style/textStylePoppinsbold16"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:id="@+id/scrollView"
+            android:layout_height="0dp" android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_10px"
+            android:paddingEnd="@dimen/_14px" android:paddingStart="@dimen/_16px">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <FrameLayout android:id="@+id/frame"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_2px"
+                    android:layout_marginTop="@dimen/_33px"
+                    android:layout_width="match_parent" style="@style/groupStyle">
+                    <FrameLayout android:id="@+id/frame1"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" style="@style/groupStyle">
+                        <FrameLayout android:id="@+id/frame2"
+                            android:layout_gravity="center"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent" style="@style/groupStylelight_blue_A200cornerRadius">
+                            <LinearLayout android:id="@+id/linear3"
+                                android:layout_gravity="center"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_24px"
+                                android:layout_marginEnd="@dimen/_21px"
+                                android:layout_marginStart="@dimen/_21px"
+                                android:layout_marginTop="@dimen/_24px"
+                                android:layout_width="match_parent"
+                                android:orientation="vertical" style="@style/groupStyle">
+                                <ImageView android:id="@+id/image1"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_22px"
+                                    android:layout_marginStart="@dimen/_3px"
+                                    android:layout_width="@dimen/_36px" android:src="@drawable/img_group_503"/>
+                                <TextView android:gravity="top|center"
+                                    android:id="@+id/txt63269124"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_31px"
+                                    android:layout_width="match_parent"
+                                    android:text="@{lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.txt63269124}" style="@style/textStylePoppinsbold24"/>
+                                <LinearLayout android:id="@+id/linear4"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_17px"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <TextView
+                                    android:gravity="top|start"
+                                    android:id="@+id/txtCardHolder"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.43"
+                                    android:layout_width="0dp"
+                                    android:text="@{lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.txtCardHolder}" style="@style/textStylePoppinsregular10_2"/>
+                                    <TextView
+                                    android:gravity="top|start"
+                                    android:id="@+id/txtCardSave"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_37px"
+                                    android:layout_weight="0.57"
+                                    android:layout_width="0dp"
+                                    android:text="@{lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.txtCardSave}" style="@style/textStylePoppinsregular10_2"/>
+                                </LinearLayout>
+                                <LinearLayout android:id="@+id/linear5"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2px"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <TextView
+                                    android:gravity="top|center"
+                                    android:id="@+id/txtLailyfaFebrina1"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.54"
+                                    android:layout_width="0dp"
+                                    android:text="@{lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.txtLailyfaFebrina1}" style="@style/textStylePoppinsbold10_3"/>
+                                    <TextView
+                                    android:gravity="top|center"
+                                    android:id="@+id/txt192042"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_27px"
+                                    android:layout_weight="0.46"
+                                    android:layout_width="0dp"
+                                    android:text="@{lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.txt192042}" style="@style/textStylePoppinsbold10_3"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+                    </FrameLayout>
+                </FrameLayout>
+                <LinearLayout android:id="@+id/linear6"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2px"
+                    android:layout_marginTop="@dimen/_24px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtCardNumber"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.txtCardNumber}" style="@style/textStylePoppinsbold14_3"/>
+                    <EditText
+                        android:background="@drawable/rectangle_bg_white_a700_border_blue_50_radius_5"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="top|start"
+                        android:hint="@string/msg_1231_2312_3"
+                        android:id="@+id/et123123123"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_13px"
+                        android:paddingStart="@dimen/_16px"
+                        android:paddingTop="@dimen/_13px"
+                        android:singleLine="true"
+                        android:text="@={lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.et123123123Value}"
+                        android:textColor="@color/bluegray_300"
+                        android:textColorHint="@color/bluegray_300"
+                        android:textFontWeight="700"
+                        android:textSize="@dimen/_12px" android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear7"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2px"
+                    android:layout_marginTop="@dimen/_24px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtExpirationDate"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.txtExpirationDate}" style="@style/textStylePoppinsbold14_3"/>
+                    <EditText
+                        android:background="@drawable/rectangle_bg_white_a700_border_blue_50_radius_5"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center|start"
+                        android:hint="@string/lbl_12_12"
+                        android:id="@+id/et1212"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_13px"
+                        android:paddingStart="@dimen/_16px"
+                        android:paddingTop="@dimen/_13px"
+                        android:singleLine="true"
+                        android:text="@={lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.et1212Value}"
+                        android:textColor="@color/bluegray_300"
+                        android:textColorHint="@color/bluegray_300"
+                        android:textFontWeight="700"
+                        android:textSize="@dimen/_12px" android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear8"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_29px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtSecurityCode"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.txtSecurityCode}" style="@style/textStylePoppinsbold14_3"/>
+                    <EditText
+                        android:background="@drawable/rectangle_bg_white_a700_border_blue_50_radius_5"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center|start"
+                        android:hint="@string/lbl_1219"
+                        android:id="@+id/et1219"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_13px"
+                        android:paddingStart="@dimen/_16px"
+                        android:paddingTop="@dimen/_13px"
+                        android:singleLine="true"
+                        android:text="@={lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.et1219Value}"
+                        android:textColor="@color/bluegray_300"
+                        android:textColorHint="@color/bluegray_300"
+                        android:textFontWeight="700"
+                        android:textSize="@dimen/_12px" android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear9"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2px"
+                    android:layout_marginTop="@dimen/_24px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtCardHolder1"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.txtCardHolder1}" style="@style/textStylePoppinsbold14_3"/>
+                    <EditText
+                        android:background="@drawable/rectangle_bg_white_a700_border_blue_50_radius_5"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center|start"
+                        android:hint="@string/lbl_lailyfa_febrina"
+                        android:id="@+id/etLailyfaFebrina"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_13px"
+                        android:paddingStart="@dimen/_16px"
+                        android:paddingTop="@dimen/_13px"
+                        android:singleLine="true"
+                        android:text="@={lailyfaFebrinaCardVM.lailyfaFebrinaCardModel.etLailyfaFebrinaValue}"
+                        android:textColor="@color/bluegray_300"
+                        android:textColorHint="@color/bluegray_300"
+                        android:textFontWeight="700"
+                        android:textSize="@dimen/_12px" android:textStyle="bold"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:clickable="true"
+                    android:gravity="top|center"
+                    android:id="@+id/btnSave"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_2px"
+                    android:layout_marginTop="@dimen/_40px"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_16px"
+                    android:text="@string/lbl_save" style="@style/textStylePoppinsbold14"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="chooseCreditOrDebitCardVM" type="com.pearlvinechennai.app.modules.choosecreditordebitcard.data.viewmodel.ChooseCreditOrDebitCardVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linear1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24px"
+                    android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_left"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtChooseCard"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12px"
+                    android:layout_weight="0.36"
+                    android:layout_width="0dp"
+                    android:text="@{chooseCreditOrDebitCardVM.chooseCreditOrDebitCardModel.txtChooseCard}" style="@style/textStylePoppinsbold16"/>
+                <ImageView android:id="@+id/image1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24px"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_plus_1"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:id="@+id/scrollView"
+            android:layout_height="0dp" android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_10px"
+            android:paddingEnd="@dimen/_16px" android:paddingStart="@dimen/_16px">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <FrameLayout android:id="@+id/frame"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_44px"
+                    android:layout_width="match_parent" style="@style/groupStyle">
+                    <FrameLayout android:id="@+id/frame1"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" style="@style/groupStylelight_blue_A200cornerRadius">
+                        <LinearLayout android:id="@+id/linear3"
+                            android:layout_gravity="center"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_16px"
+                            android:layout_marginEnd="@dimen/_21px"
+                            android:layout_marginStart="@dimen/_21px"
+                            android:layout_marginTop="@dimen/_24px"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStyle">
+                            <ImageView android:id="@+id/image2"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_22px"
+                                android:layout_marginStart="@dimen/_3px"
+                                android:layout_width="@dimen/_36px" android:src="@drawable/img_group_503"/>
+                            <TextView android:gravity="top|center"
+                                android:id="@+id/txt63269124"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_31px"
+                                android:layout_width="match_parent"
+                                android:text="@{chooseCreditOrDebitCardVM.chooseCreditOrDebitCardModel.txt63269124}" style="@style/textStylePoppinsbold24"/>
+                            <LinearLayout android:id="@+id/linear4"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_17px"
+                                android:layout_width="match_parent" android:orientation="horizontal">
+                                <TextView android:gravity="top|start"
+                                    android:id="@+id/txtCardHolder"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.43"
+                                    android:layout_width="0dp"
+                                    android:text="@{chooseCreditOrDebitCardVM.chooseCreditOrDebitCardModel.txtCardHolder}" style="@style/textStylePoppinsregular10_2"/>
+                                <TextView android:gravity="top|start"
+                                    android:id="@+id/txtCardSave"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_37px"
+                                    android:layout_weight="0.57"
+                                    android:layout_width="0dp"
+                                    android:text="@{chooseCreditOrDebitCardVM.chooseCreditOrDebitCardModel.txtCardSave}" style="@style/textStylePoppinsregular10_2"/>
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/linear5"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10px"
+                                android:layout_width="match_parent" android:orientation="horizontal">
+                                <TextView android:gravity="top|center"
+                                    android:id="@+id/txtDominicOvo"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.46"
+                                    android:layout_width="0dp"
+                                    android:text="@{chooseCreditOrDebitCardVM.chooseCreditOrDebitCardModel.txtDominicOvo}" style="@style/textStylePoppinsbold10_3"/>
+                                <TextView android:gravity="top|center"
+                                    android:id="@+id/txt192042"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_39px"
+                                    android:layout_weight="0.54"
+                                    android:layout_width="0dp"
+                                    android:text="@{chooseCreditOrDebitCardVM.chooseCreditOrDebitCardModel.txt192042}" style="@style/textStylePoppinsbold10_3"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </FrameLayout>
+                <ImageView android:id="@+id/image3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_8px"
+                    android:layout_marginEnd="@dimen/_50px"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_marginTop="@dimen/_16px"
+                    android:layout_width="@dimen/_72px" android:src="@drawable/img_slideshow_image"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:clickable="true" android:gravity="center"
+                    android:id="@+id/btnPay76686"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_80px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_16px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_16px"
+                    android:text="@string/lbl_pay_766_86" style="@style/textStylePoppinsbold14"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

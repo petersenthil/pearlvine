@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="searchResultVM" type="com.pearlvinechennai.app.modules.searchresult.data.viewmodel.SearchResultVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linear1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <EditText
+                    android:background="@drawable/rectangle_border_blue_50_radius_6"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="top|start"
+                    android:hint="@string/lbl_nike_air_max"
+                    android:id="@+id/etNikeAirMax"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.77"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_12px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_12px"
+                    android:singleLine="true"
+                    android:text="@={searchResultVM.searchResultModel.etNikeAirMaxValue}"
+                    android:textColor="@color/indigo_900"
+                    android:textColorHint="@color/indigo_900"
+                    android:textFontWeight="700"
+                    android:textSize="@dimen/_12px" android:textStyle="bold"/>
+                <ImageView android:clickable="true"
+                    android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24px"
+                    android:layout_marginStart="@dimen/_16px"
+                    android:layout_width="@dimen/_24px" android:src="@drawable/img_short_icon"/>
+                <ImageView android:clickable="true"
+                    android:id="@+id/image1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24px"
+                    android:layout_marginStart="@dimen/_16px"
+                    android:layout_width="@dimen/_24px" android:src="@drawable/img_filter"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:id="@+id/scrollView" android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent" android:paddingBottom="@dimen/_10px">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <View android:background="@color/blue_50"
+                    android:id="@+id/line"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_1px"
+                    android:layout_marginTop="@dimen/_18px" android:layout_width="match_parent"/>
+                <LinearLayout android:id="@+id/linear3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16px"
+                    android:layout_marginStart="@dimen/_16px"
+                    android:layout_marginTop="@dimen/_15px"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txt145Result"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.19"
+                        android:layout_width="0dp"
+                        android:text="@{searchResultVM.searchResultModel.txt145Result}" style="@style/textStylePoppinsbold12_2"/>
+                    <TextView android:gravity="top|end"
+                        android:id="@+id/txtManShoes"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_50px"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:text="@{searchResultVM.searchResultModel.txtManShoes}" style="@style/textStylePoppinsbold12_2"/>
+                    <ImageView android:id="@+id/image2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginStart="@dimen/_8px"
+                        android:layout_width="@dimen/_24px" android:src="@drawable/img_down_icon"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16px"
+                    android:layout_marginStart="@dimen/_16px"
+                    android:layout_marginTop="@dimen/_16px"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2" itemSpace="@{@dimen/_13px}"
+                    tools:itemCount="6" tools:listitem="@layout/row_search_result1"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="creditCardAndDebit1RowModel" type="com.pearlvinechennai.app.modules.creditcardanddebit.data.model.CreditCardAndDebit1RowModel"/>
+    </data>
+    <FrameLayout android:clickable="true" android:id="@+id/frame"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" style="@style/groupStyle">
+        <FrameLayout android:clickable="true" android:id="@+id/frame1"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" style="@style/groupStylelight_blue_A200cornerRadius">
+            <LinearLayout android:id="@+id/linear"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_24px"
+                android:layout_marginEnd="@dimen/_21px"
+                android:layout_marginStart="@dimen/_21px"
+                android:layout_marginTop="@dimen/_24px"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStyle">
+                <ImageView android:id="@+id/image"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_22px"
+                    android:layout_marginStart="@dimen/_3px"
+                    android:layout_width="@dimen/_36px" android:src="@drawable/img_group_503"/>
+                <TextView android:gravity="top|center"
+                    android:id="@+id/txt63269124"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_31px"
+                    android:layout_width="match_parent"
+                    android:text="@{creditCardAndDebit1RowModel.txt63269124}" style="@style/textStylePoppinsbold24"/>
+                <LinearLayout android:id="@+id/linear1"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_17px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <LinearLayout android:id="@+id/linear2"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtCardHolder"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.43"
+                            android:layout_width="0dp"
+                            android:text="@{creditCardAndDebit1RowModel.txtCardHolder}" style="@style/textStylePoppinsregular10_2"/>
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtCardSave"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_37px"
+                            android:layout_weight="0.57"
+                            android:layout_width="0dp"
+                            android:text="@{creditCardAndDebit1RowModel.txtCardSave}" style="@style/textStylePoppinsregular10_2"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear3"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <LinearLayout android:id="@+id/linear4"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:gravity="top|center"
+                            android:id="@+id/txtDominicOvo"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.48"
+                            android:layout_width="0dp"
+                            android:text="@{creditCardAndDebit1RowModel.txtDominicOvo}" style="@style/textStylePoppinsbold10_3"/>
+                        <TextView android:gravity="top|center"
+                            android:id="@+id/txt192042"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_34px"
+                            android:layout_weight="0.51"
+                            android:layout_width="0dp"
+                            android:text="@{creditCardAndDebit1RowModel.txt192042}" style="@style/textStylePoppinsbold10_3"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

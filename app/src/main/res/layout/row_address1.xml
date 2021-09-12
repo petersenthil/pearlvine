@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="address1RowModel" type="com.pearlvinechennai.app.modules.address.data.model.Address1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_1">
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtPriscekila"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24px"
+            android:layout_marginTop="@dimen/_24px"
+            android:layout_width="match_parent"
+            android:text="@{address1RowModel.txtPriscekila}" style="@style/textStylePoppinsbold14_3"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txt3711SpringHil"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24px"
+            android:layout_marginStart="@dimen/_24px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:text="@{address1RowModel.txt3711SpringHil}" style="@style/textStylePoppinsregular12"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txt991234567890"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:text="@{address1RowModel.txt991234567890}" style="@style/textStylePoppinsregular12"/>
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStyle">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtEdit"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.26" android:layout_width="0dp"
+                android:text="@{address1RowModel.txtEdit}" style="@style/textStylePoppinsbold14_4"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtDelete"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32px"
+                android:layout_weight="0.74" android:layout_width="0dp"
+                android:text="@{address1RowModel.txtDelete}" style="@style/textStylePoppinsbold14_7"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

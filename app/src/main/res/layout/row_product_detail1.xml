@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="productDetail1RowModel" type="com.pearlvinechennai.app.modules.productdetail.data.model.ProductDetail1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+        <ImageView android:id="@+id/image"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_109px"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="@dimen/_109px"
+            android:scaleType="centerCrop" cornerRadius="@{@dimen/_5px}" imageRes="@{@drawable/img_image_product_1}"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtFsNikeAirM"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_8px"
+            android:layout_width="wrap_content"
+            android:text="@{productDetail1RowModel.txtFsNikeAirM}" style="@style/textStylePoppinsbold12_2"/>
+        <TextView android:gravity="top|start" android:id="@+id/txt29943"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_8px"
+            android:layout_width="wrap_content"
+            android:text="@{productDetail1RowModel.txt29943}" style="@style/textStylePoppinsbold12"/>
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_8px"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal" style="@style/groupStyle">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txt53433"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@{productDetail1RowModel.txt53433}" style="@style/textStylePoppinsregular10"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txt24Off"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8px"
+                android:layout_width="wrap_content"
+                android:text="@{productDetail1RowModel.txt24Off}" style="@style/textStylePoppinsbold10"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

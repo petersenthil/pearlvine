@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="explore2RowModel" type="com.pearlvinechennai.app.modules.explore.data.model.Explore2RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle">
+        <ImageView android:id="@+id/image"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_70px"
+            android:layout_width="@dimen/_70px" imageRes="@{@drawable/img_product_icon_1}"/>
+        <TextView android:gravity="top|center"
+            android:id="@+id/txtDress"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8px"
+            android:layout_width="match_parent"
+            android:text="@{explore2RowModel.txtDress}" style="@style/textStylePoppinsregular10"/>
+    </LinearLayout>
+</layout>

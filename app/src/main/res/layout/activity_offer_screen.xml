@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="offerScreenVM" type="com.pearlvinechennai.app.modules.offerscreen.data.viewmodel.OfferScreenVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linear1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24px"
+                    android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_left"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtSuperFlashSal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12px"
+                    android:layout_weight="0.45"
+                    android:layout_width="0dp"
+                    android:text="@{offerScreenVM.offerScreenModel.txtSuperFlashSal}" style="@style/textStylePoppinsbold16"/>
+                <ImageView android:clickable="true"
+                    android:id="@+id/image1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24px"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_width="@dimen/_24px" android:src="@drawable/img_system_icon_24px_search_1"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:id="@+id/scrollView" android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_10px"
+            android:paddingEnd="@dimen/_16px" android:paddingStart="@dimen/_16px">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <FrameLayout android:id="@+id/frame"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_44px"
+                    android:layout_width="match_parent" style="@style/groupStyle">
+                    <FrameLayout android:id="@+id/frame1"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" style="@style/groupStyle">
+                        <ImageView android:id="@+id/image2"
+                            android:layout_gravity="center"
+                            android:layout_height="@dimen/_206px"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            cornerRadius="@{@dimen/_5px}" imageRes="@{@drawable/img_promotion_image}"/>
+                        <LinearLayout android:id="@+id/linear3"
+                            android:layout_gravity="center|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_24px"
+                            android:layout_width="wrap_content" android:orientation="vertical">
+                            <TextView android:gravity="top|start"
+                                android:id="@+id/txtSuperFlashSal1"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="@{offerScreenVM.offerScreenModel.txtSuperFlashSal1}" style="@style/textStylePoppinsbold24"/>
+                            <LinearLayout android:id="@+id/linear4"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_29px"
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal" style="@style/groupStyle">
+                                <TextView android:gravity="top|center"
+                                    android:id="@+id/txt08"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:paddingBottom="@dimen/_9px"
+                                    android:paddingEnd="@dimen/_11px"
+                                    android:paddingStart="@dimen/_9px"
+                                    android:paddingTop="@dimen/_8px"
+                                    android:text="@{offerScreenVM.offerScreenModel.txt08}" style="@style/textStylePoppinsbold16_1"/>
+                                <TextView android:gravity="top|center"
+                                    android:id="@+id/txtLbl"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_4px"
+                                    android:layout_width="wrap_content"
+                                    android:text="@{offerScreenVM.offerScreenModel.txtLbl}" style="@style/textStylePoppinsbold14_2"/>
+                                <TextView android:gravity="top|center"
+                                    android:id="@+id/txt34"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_4px"
+                                    android:layout_width="wrap_content"
+                                    android:paddingBottom="@dimen/_9px"
+                                    android:paddingEnd="@dimen/_11px"
+                                    android:paddingStart="@dimen/_9px"
+                                    android:paddingTop="@dimen/_8px"
+                                    android:text="@{offerScreenVM.offerScreenModel.txt34}" style="@style/textStylePoppinsbold16_1"/>
+                                <TextView android:gravity="top|center"
+                                    android:id="@+id/txtLbl1"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_4px"
+                                    android:layout_width="wrap_content"
+                                    android:text="@{offerScreenVM.offerScreenModel.txtLbl1}" style="@style/textStylePoppinsbold14_2"/>
+                                <TextView android:gravity="top|center"
+                                    android:id="@+id/txt52"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_4px"
+                                    android:layout_width="wrap_content"
+                                    android:paddingBottom="@dimen/_9px"
+                                    android:paddingEnd="@dimen/_10px"
+                                    android:paddingStart="@dimen/_11px"
+                                    android:paddingTop="@dimen/_8px"
+                                    android:text="@{offerScreenVM.offerScreenModel.txt52}" style="@style/textStylePoppinsbold16_1"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </FrameLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16px"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2" itemSpace="@{@dimen/_13px}"
+                    tools:itemCount="4" tools:listitem="@layout/row_offer_screen1"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>
